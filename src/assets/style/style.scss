@@ -1,0 +1,136 @@
+@import '/src/assets/style/variables.scss';
+
+ul {
+  background-color: #24272d !important;
+  border-top: none !important;
+  border-left: 1px solid rgba(128, 128, 128, 0.2) !important;
+  border-right: 1px solid rgba(128, 128, 128, 0.2) !important;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2) !important;
+  border-radius: 0 !important;
+  z-index: 2 !important;
+  transform: translate3d(0px, 29.5px, 0px) !important;
+}
+
+button {
+  color: $container-color;
+  border-radius: 0 !important;
+}
+
+button:hover {
+  text-decoration: none !important;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+  text-decoration: none !important;
+}
+
+ul {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+ul a {
+  color: $container-color;
+}
+
+ul a:hover {
+  background-color: $highlight !important;
+}
+
+ul li {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: calc(0.75rem);
+  height: calc(0.75rem);
+  border-radius: 15px;
+  background: rgba(0,0,0,0);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+}
+
+.no-select {
+  -webkit-user-select: none;
+}
+
+.modal-content {
+  background-color: $body-bg !important;
+  border-radius: 0 !important;
+}
+
+.modal-title {
+  font-size: 1rem !important;
+}
+
+.modal-header {
+  border-bottom: $container-border;
+}
+
+.modal-footer {
+  border-top: none !important;
+}
+
+.btn-secondary {
+  background-color: $window-title-color !important;
+  border-color: $window-title-color !important;
+  font-size:0.8rem !important;
+}
+
+.btn-primary {
+  background-color: $container-bg;
+  border-color: $container-bg;
+  font-size:0.8rem !important;
+}
+
+.close {
+  font-size: 1rem !important;
+}
+
+.form-control {
+  background-color: $input-bg !important;
+  border: $container-border;
+}
+
+.form-control-sm {
+  background-color: $input-bg !important;
+  border: 1px solid rgba(128, 128, 128, 0.20);
+  border-radius: 0 !important;
+}
+
+.form-control-sm:focus {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  outline: none;
+  color: $window-title-color;
+}
+
+.clusterize-scroll {
+  height: calc(100vh - 35px) !important;
+  max-height: unset !important;
+}
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
