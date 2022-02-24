@@ -32,4 +32,5 @@ jobs:
       - name: 'Build Leaflet'
         working-directory: '.'
         run:
+          npm install
           vue-cli-service electron:build
