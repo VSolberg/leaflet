@@ -27,7 +27,7 @@ jobs:
 
       - name: Install Vue cli
         run:
-          npm install @vue/cli-service-global @vue/cli -g
+          npm install @vue/cli-service-global @vue/cli --save-dev
 
       - name: 'Build Leaflet'
         working-directory: '.'
