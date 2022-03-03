@@ -33,4 +33,4 @@ jobs:
         working-directory: '.'
         run: |
           npm install
-          npx vue-cli-service electron:build
+          npx vue-cli-service electron:build --publish never
